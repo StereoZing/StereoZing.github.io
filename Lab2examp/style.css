@@ -1,0 +1,33 @@
+#hat {
+    width: 100%;
+    background-color: #66ccff;
+    padding: 10px;
+    height: 120px;
+}
+
+#logo {
+    float: left;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+#hatText {
+    background-color: #b3e6ff;
+    padding: 10px;
+}
+
+#contentBlock1 {
+    max-width: 800px;
+    background-color: #b3e6ff;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#contentBlock2 {
+    width: 100px;
+    background-color: #b3e6ff;
+    margin: 50px;
+    padding: 50px;
+}
