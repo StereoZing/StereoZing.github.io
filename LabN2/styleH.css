@@ -1,0 +1,92 @@
+#hat {
+    width: 99%;
+    background-color: #66ccff;
+    padding: 10px;
+    height: 120px;
+    border-radius: 15px;
+}
+
+#logo {
+    float: left;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+#hatText {
+    font-size 150%;
+    font-family: Arial;
+    background-color: #b3e6ff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#contentBlock1 {
+    max-width: 800px;
+    background-color: #b3e6ff;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    opacity: .8;
+    
+}
+
+#table {
+    max-width: 800px;
+    background-color: #b3e6ff;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    opacity: .8;
+}
+
+#t1 {
+    border: 1px solid;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+#t1 th {
+    border: 1px solid;
+    border-color: black;
+}
+
+#t1 td {
+    border: 1px solid;
+    border-color: black;
+}
+
+    #t1 tbody tr:nth-child(even) {
+        background-color: #3366ff;
+        color: white;
+    }
+
+    #t1 tbody tr:nth-child(odd) {
+        background-color: #7300e6;
+        color: white;
+    }
+
+#form1 {
+    max-width: 800px;
+    background-color: #b3e6ff;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    opacity: .8;
+}
+
+.content h2 {
+    opacity: 1;
+    text-align: center;
+}
+
+#footer {
+    width: 99%;
+    background-color: #66ccff;
+    padding: 10px;
+}
+
