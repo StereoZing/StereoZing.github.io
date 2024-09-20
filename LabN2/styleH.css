@@ -24,6 +24,29 @@
     border-radius: 10px;
 }
 
+nav {
+    float: right;
+    max-width: 960px;
+    background-color: #007acc;
+    border-radius: 10px;
+}
+
+    nav ul {
+        margin: 0;
+        padding: 2px 2px 3px 10px;
+        list-style-type: none;
+    }
+
+        nav ul li {
+            margin-right: 10px;
+            display: inline-block;
+        }
+
+    nav a {
+        color: #b3e6ff;
+        text-decoration: none;
+    }
+
 #contentBlock1 {
     color: #007acc;
     max-width: 800px;
