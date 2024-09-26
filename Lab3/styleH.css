@@ -1,9 +1,11 @@
 #hat {
-    width: 99%;
+    position: relative;
     background-color: #66ccff;
-    padding: 10px;
-    height: 120px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     border-radius: 15px;
+    /*    display: flex;*/
 }
 
 #logo {
@@ -15,6 +17,7 @@
 }
 
 #hatText {
+    order: 1;
     font-weight:700;
     color: #007acc;
     font-size: 120%;
@@ -25,8 +28,9 @@
 }
 
 nav {
+    order: 2;
     float: right;
-    max-width: 960px;
+    text-align: center;
     background-color: #007acc;
     border-radius: 10px;
 }
@@ -47,16 +51,20 @@ nav {
         text-decoration: none;
     }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
 #contentBlock1 {
+    order: 2;
     color: #007acc;
-    max-width: 800px;
     background-image: url('blockbg.png');
-    /*background-color: #b3e6ff;*/
-    margin: 0 auto;
     margin-top: 20px;
     padding: 10px;
     border-radius: 15px;
-    /*opacity: .8;*/
 }
 
     #contentBlock1 a {
@@ -64,16 +72,13 @@ nav {
     }
 
 #table {
-    color: #007acc;
-    max-width: 800px;
-    background-image: url('blockbg.png');
-    max-width: 800px;
-    /*background-color: #b3e6ff;*/
-    margin: 0 auto;
+    order: 0;
     margin-top: 20px;
-    padding: 10px;
+    text-align: center;
+    color: #007acc;
+    padding: 20px;
+    background-image: url('blockbg.png');
     border-radius: 15px;
-    /*opacity: .8;*/
 }
 
 #t1 {
@@ -94,25 +99,21 @@ nav {
 
     #t1 tbody tr:nth-child(even) {
         background-color: #66ccff;
-        /*color: white;*/
     }
 
     #t1 tbody tr:nth-child(odd) {
         background-color: #b3e6ff;
-        /*color: white;*/
     }
 
 #form1 {
+    order: 3;
     color: #007acc;
     max-width: 800px;
     background-image: url('blockbg.png');
     max-width: 800px;
-    /*background-color: #b3e6ff;*/
-    margin: 0 auto;
     margin-top: 20px;
     padding: 10px;
     border-radius: 15px;
-    /*    opacity: .8;*/
 }
 
 .content h2 {
@@ -135,7 +136,26 @@ nav {
 }
 
 @media screen and (min-width: 800px) {
-    #main-aside-wrapper {
-        flex-direction: row;
+
+
+    nav {
+        max-width: 960px;
+        background-color: #007acc;
+        border-radius: 10px;
+    }
+
+    .content #table {
+        order: 2;
+    }
+
+    .content #contentBlock1 {
+        order: 1;
+    }
+
+    .content {
+
+        margin: 0 auto;
+        width: 800px;
+
     }
 }
