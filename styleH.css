@@ -1,0 +1,161 @@
+#hat {
+    position: relative;
+    background-color: #66ccff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    /*    display: flex;*/
+}
+
+#logo {
+    float: left;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+#hatText {
+    order: 1;
+    font-weight:700;
+    color: #007acc;
+    font-size: 120%;
+    font-family: Arial;
+    background-color: #b3e6ff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav {
+    order: 2;
+    float: right;
+    text-align: center;
+    background-color: #007acc;
+    border-radius: 10px;
+}
+
+    nav ul {
+        margin: 0;
+        padding: 2px 2px 3px 10px;
+        list-style-type: none;
+    }
+
+        nav ul li {
+            margin-right: 10px;
+            display: inline-block;
+        }
+
+    nav a {
+        color: #b3e6ff;
+        text-decoration: none;
+    }
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+#contentBlock1 {
+    order: 2;
+    color: #007acc;
+    background-image: url('blockbg.png');
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+    #contentBlock1 a {
+        color: #007acc;
+    }
+
+#table {
+    order: 0;
+    margin-top: 20px;
+    text-align: center;
+    color: #007acc;
+    padding: 20px;
+    background-image: url('blockbg.png');
+    border-radius: 15px;
+}
+
+#t1 {
+    border: 2px solid;
+    border-color: #007acc;
+    border-collapse: collapse;
+}
+
+    #t1 th {
+        border: 2px solid;
+        border-color: #007acc;
+    }
+
+    #t1 td {
+        border: 2px solid;
+        border-color: #007acc;
+    }
+
+    #t1 tbody tr:nth-child(even) {
+        background-color: #66ccff;
+    }
+
+    #t1 tbody tr:nth-child(odd) {
+        background-color: #b3e6ff;
+    }
+
+#form1 {
+    order: 3;
+    color: #007acc;
+    max-width: 800px;
+    background-image: url('blockbg.png');
+    max-width: 800px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.content h2 {
+    opacity: 1;
+    text-align: center;
+}
+
+#footer {
+    color: #004d80;
+    border-radius: 15px;
+    width: 99%;
+    background-color: #66ccff;
+    padding: 10px;
+}
+
+#golub {
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: #007acc;
+}
+
+@media screen and (min-width: 800px) {
+
+
+    nav {
+        max-width: 960px;
+        background-color: #007acc;
+        border-radius: 10px;
+    }
+
+    .content #table {
+        order: 2;
+    }
+
+    .content #contentBlock1 {
+        order: 1;
+    }
+
+    .content {
+
+        margin: 0 auto;
+        width: 800px;
+
+    }
+}
