@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <title>Лабороторная работа №4</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      rel="stylesheet" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styleH.css" />
+  </head>
+
+  <body class="fs-120p ff-sans-serif" id="body">
+
+    <header class="bgc-green">
+      <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img class="logo__img rounded-circle" src="Rango.jpg" alt="logo" />
+            <h1 class="text-center fw-bold d-inline-block align-middle">
+              Лабороторная работа №4</h1>
+          </a>
+
+          <div class="collapse navbar-collapse show" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" title="Home"
+                  href="#hyperlinks">Гипперссылки</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" title="Form" href="#form">Форма</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" title="Table" href="#table">Таблица</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="mxw-960 container g-0 d-flex flex-column justify-content-center">
+      <section class="content order-2 order-sm-1 mt-3 p-3" id="hyperlinks">
+        <h2 class="text-center fw-bold">Гипперссылки</h2>
+
+        <ul id="hyperlinks">
+            <li><a href="http://kubsu.ru/">КубГУ</a></li>
+            <li><a id="123123" href="https://kubsu.ru">КубГУ</a></li>
+            <li><a id="straus" href="https://kubsu.ru"><img src="image.jpg" width="20%" height="20%" /></a></li>
+            <li><a href="/someText.html">Внутреняя страница</a></li>
+            <li><a href="/index.html">Главная страница</a></li>
+            <li><a href="#123123">На фрагмент текущей станицы</a></li>
+            <li><a id="123153" href="https://www.w3schools.com/html?AND&OR&XOR    ">С 3 параметрами</a></li>
+            <li><a id="123155" href="https://www.w3schools.com/html?id=123155">С ID</a></li>
+            <li><a href="/">Относительная сcылка на текущий каталог</a></li>
+            <li><a href="./about/1.html">Относительная сcылка на каталог about</a></li>
+            <li><a href="../">Относительная сcылка на каталог уровнем выше</a></li>
+            <li><a href="../../">Относительная сcылка на каталог двумя уровнями выше</a></li>
+            <li><p>Абзац <a href="http://kubsu.ru">ссылка</a></p></li>
+            <li><a href="https://youtu.be/dQw4w9WgXcQ?si=Gq2ITf9IF59UMiNj">Ссылка на фрагмент страницы стороннего сайта</a></li>
+            <li>
+                <map name="primary">
+                    <area shape="circle" coords="75,75,75" href="#1" alt="Круг" />
+                    <area shape="rect" coords="150,0,350,150" href="#2" alt="Прямоугольник" />
+                </map>
+                <img id="golub" usemap="#primary" src="golub.jpg" width="200" height="199" alt="Pic" />
+            </li>
+            <li><a href="">Ссылка с пустым href</a></li>
+            <li><a>Ссылка без href</a></li>
+            <li><a href="https://kubsu.ru" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+            <li><!--noindex--><a href="https://kubsu.ru">Ссылка, запрещенная для индексации поисковиками</a><!--/noindex--></li>
+            <li>
+                <p1>Материалы по языкам программирования:</p1>
+                <ol>
+                    <li><a href="https://www.w3schools.com/js/">JavaScript</a><br /></li>
+                    <li><a href="https://www.w3schools.com/java">Java</a><br /></li>
+                    <li><a href="https://www.w3schools.com/python">Python</a><br /></li>
+                </ol>
+            </li>
+            <li><a href="ftp://user:password@example.com/myfile.zip">FTTP</a></li>
+
+        </ul>
+      </section>
+
+      <section class="content order-1 order-sm-2 mt-3 p-3" id="table">
+        <h2 class="text-center fw-bold">Таблица</h2>
+
+        <div class="table-responsive">
+            <table id="t1">
+                <tr>
+                    <th>Колонка 1</th>
+                    <th>Колонка 2</th>
+                    <th>Колонка 3</th>
+                    <th>Колонка 4</th>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td colspan="3">12 c 13 c 14</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td>32</td>
+                    <td colspan="2" rowspan="2">33 c 34 c 43 c 44</td>
+                </tr>
+                <tr>
+                    <td>41</td>
+                    <td>42</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">51 c 61</td>
+                    <td>52</td>
+                    <td>53</td>
+                    <td>54</td>
+                </tr>
+                <tr>
+                    <td>62</td>
+                    <td>63</td>
+                    <td>64</td>
+                </tr>
+            </table>
+        </div>
+      </section>
+
+      <section class="content order-3 order-sm-3 mt-3 p-3" id="form">
+        <h2 class="text-center fw-bold">Форма</h2>
+
+        <form action="/" method="POST">
+            <label>
+                Имя:<br />
+                <input name="name" required />
+            </label><br />
+
+            <label>
+                Телефон:<br />
+                <input type="tel" name="phone" required />
+            </label><br />
+
+            <label>
+                Email:<br />
+                <input type="email" name="email" required />
+            </label><br />
+
+            <label>
+                Дата рождения:<br />
+                <input type="date" name="birthday" />
+            </label><br />
+
+            Пол:<br />
+            <label>
+                <input type="radio" checked="checked" name="пол"
+                       value="муж" /> Муж
+            </label>
+            <label>
+                <input type="radio" name="пол" value="жен" /> Жен
+            </label><br />
+
+            <label>
+                Любимые языки программирования:<br />
+                <select name="languages" multiple="multiple">
+                    <option value="Pascal">Pascal</option>
+                    <option value="C">C</option>
+                    <option value="C++">C++</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="Haskel">Haskel</option>
+                    <option value="Clojure">Clojure</option>
+                    <option value="Prolog">Prolog</option>
+                    <option value="Scala">Scala</option>
+                </select>
+            </label><br />
+
+            <label>
+                Биография:<br />
+                <textarea name="biography"></textarea>
+            </label><br />
+
+            <label>
+                <input type="checkbox" name="familiarized" required />
+                Ознакомлен с контрактом
+            </label><br />
+
+            <button type="submit">Сохранить</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="bgc-green mt-3 p-3">
+      <div class="text-center">
+        Copyright &copy;
+        <time datetime="2024">2024</time>
+        StereoZing
+      </div>
+    </footer>
+
+  </body>
+
+</html>
