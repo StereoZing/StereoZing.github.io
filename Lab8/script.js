@@ -69,6 +69,6 @@ window.addEventListener("DOMContentLoaded", function () {
     Object.keys(lStor).forEach(function (i) {
         document.getElementsByName(i)[0].value = lStor.getItem(i);
     });
-    document.getElementById("buttonSave").addEventListener("click", saveForm);
+    document.getElementById("form").addEventListener("submit", saveForm);
     historyChange();
 });
