@@ -1,0 +1,64 @@
+﻿html {
+    font-size: 0.8rem;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    position: relative;
+}
+
+footer {
+    /*background: url("../source/istockphoto-1323709916-640_adpp_is.gif");*/
+    font-size: 0.7rem;
+}
+
+.head img, .panel > *, .zakaz{
+    max-height: 8vmin;
+}
+
+.interact, .fish {
+    height: 100%;
+}
+
+.row {
+    margin: 0;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.form-control {
+    font-size: 1.2rem;
+}
+
+@media (min-width: 768px){
+    html {
+        font-size: 1rem;
+    }
+
+    .interact, .fish {
+        width: 100%;
+    }
+
+    .head img, .panel > *, .zakaz {
+        max-height: 6vmin;
+    }
+
+    video {
+        top: auto;
+        bottom: 0;
+    }
+
+    .form-control {
+        width: 75%;
+        font-size: 1rem;
+    }
+}
